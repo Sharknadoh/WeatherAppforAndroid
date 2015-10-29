@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sharknado.project.weatherapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ <!-- SDKs -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Application info and Activities -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sharknado.project.weatherapp.OpenAppScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sharknado.project.weatherapp.Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sharknado.project.weatherapp.Register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sharknado.project.weatherapp.Weather"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sharknado.project.weatherapp.Prefs"
+            android:label="@string/title_activity_prefs" >
+        </activity>
+        <activity
+            android:name="sharknado.project.weatherapp.SettingsFragment"
+            android:label="@string/title_activity_settings_fragment" >
+        </activity>
+    </application>
+
+</manifest>

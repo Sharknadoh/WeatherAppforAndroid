@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\My Projects\WeatherApps\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\classes-32ca13bef69a757a506adc7585b00bac679c5afb.jar" />
+    </item>
+    <item
+        jar="D:\My Projects\WeatherApps\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-3648fca7e29858be9850f6fb78d26d3fc9e07d2b.jar" />
+    </item>
+    <item
+        jar="D:\Program Files\Android SDK\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-21ca56a6ebf6315043ce130700b93823251cd4e3.jar" />
+    </item>
+
+</items>
