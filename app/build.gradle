@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'android-apt'
 android {
     compileSdkVersion 20
     buildToolsVersion "23.0.0 rc3"
@@ -19,5 +19,20 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
+
+
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+
+//
+//    apt "org.androidannotations:androidannotations:3.0+"
+//    compile 'org.androidannotations:androidannotations-api:3.0+'
+//
+//
+//    compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+//    compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
+//    compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+
+//    compile 'org.immutables:gson:2.0-rc'
 }

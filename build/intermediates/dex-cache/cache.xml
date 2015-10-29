@@ -2,25 +2,109 @@
 <items version="2" >
 
     <item
-        jar="D:\My Projects\WeatherApps\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-core\1.0.1.RELEASE\e68f0e8e4b636ee30c4de58953be38d9b72a5e3b\spring-android-core-1.0.1.RELEASE.jar"
         jumboMode="false"
         revision="23.0.0 rc3"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\classes-32ca13bef69a757a506adc7585b00bac679c5afb.jar" />
+        sha1="e68f0e8e4b636ee30c4de58953be38d9b72a5e3b">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-android-core-1.0.1.RELEASE-df164347b6253ddb2b4a1b6a57caf51d10febe6b.jar" />
     </item>
     <item
-        jar="D:\My Projects\WeatherApps\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\3.0.7.RELEASE\2c90825834a037aab6f6a71bbd05d81680832c49\spring-core-3.0.7.RELEASE.jar"
         jumboMode="false"
         revision="23.0.0 rc3"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-3648fca7e29858be9850f6fb78d26d3fc9e07d2b.jar" />
+        sha1="2c90825834a037aab6f6a71bbd05d81680832c49">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-core-3.0.7.RELEASE-03a9e9cd16f2e6a47bd90e23613d477096e6d95c.jar" />
     </item>
     <item
-        jar="D:\Program Files\Android SDK\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.10.3\36366e460af2c0f224bb8f70b64e3302f638b138\parse-android-1.10.3.jar"
         jumboMode="false"
         revision="23.0.0 rc3"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-21ca56a6ebf6315043ce130700b93823251cd4e3.jar" />
+        sha1="36366e460af2c0f224bb8f70b64e3302f638b138">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\parse-android-1.10.3-87489589182f8db1cf378bddd0eeeb92244309f8.jar" />
+    </item>
+    <item
+        jar="D:\My Projects\WeatherApps\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-41c088420d721973c1454b58b6cde7c34c9164f5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\gson-2.3.1-b1935506c1d998dbd2b6ad261807532f36281652.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-rest-template\1.0.1.RELEASE\e132d929bd181941f79b0d63edafb8a86ae6fd33\spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-android-rest-template-1.0.1.RELEASE-17df06ac7affac8da739e15989d7dbba4fab38d8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\3.0.1\beb7e0a75c753383e7ef68c0e1639999db301c33\androidannotations-api-3.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="beb7e0a75c753383e7ef68c0e1639999db301c33">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\androidannotations-api-3.0.1-693ac57655fc0fa695e9b9ef23d6aa7e9eeefe6d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework.android\spring-android-auth\1.0.1.RELEASE\f43faebbf90aef324979a81a4f5eee1e3b95191f\spring-android-auth-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="f43faebbf90aef324979a81a4f5eee1e3b95191f">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-android-auth-1.0.1.RELEASE-0d9cef7130896ef2b61a08f4c4421aa0689ad41d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.1\44780c2cf98f6a3cf4e77f1234d644758b329201\bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.1-413a51656a5a7cb1c8a0d67088ea90446fd73b80.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework.social\spring-social-core\1.0.2.RELEASE\93df80ccc73d7a2de75571f9617140291538c87\spring-social-core-1.0.2.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="093df80ccc73d7a2de75571f9617140291538c87">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-social-core-1.0.2.RELEASE-4510f81bf474b3355329e9b27f4eca6f4ec33ff7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework.security\spring-security-crypto\3.1.3.RELEASE\a0db20c52e8281bffc200429b7fcd7c2cbeeb0e0\spring-security-crypto-3.1.3.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="a0db20c52e8281bffc200429b7fcd7c2cbeeb0e0">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-security-crypto-3.1.3.RELEASE-f162bf95a386401a9618fc981c7962bea940e983.jar" />
+    </item>
+    <item
+        jar="D:\Program Files\Android SDK\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-eb02affb3e63b23e29cb62dc54273db36b3c2607.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.springframework\spring-asm\3.0.7.RELEASE\34afa86ac1e9cccbe33b2598b5fa826fa499b696\spring-asm-3.0.7.RELEASE.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="34afa86ac1e9cccbe33b2598b5fa826fa499b696">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\spring-asm-3.0.7.RELEASE-df2ad9689739691e12240abb2f0c5f715dc3dc4f.jar" />
+    </item>
+    <item
+        jar="D:\My Projects\WeatherApps\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\classes-6c3492f952ec779fe3c26b6d7ceef402122f8c32.jar" />
+    </item>
+    <item
+        jar="C:\Users\Michael Leffert\.gradle\caches\modules-2\files-2.1\org.immutables\gson\2.0-rc\c2632978e1348b5aa9de907df21f128c5e82a8\gson-2.0-rc.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="00c2632978e1348b5aa9de907df21f128c5e82a8">
+        <dex dex="D:\My Projects\WeatherApps\app\build\intermediates\pre-dexed\debug\gson-2.0-rc-8e5fa6e430f1285af63b6e94aed9efdd6e3a02ae.jar" />
     </item>
 
 </items>

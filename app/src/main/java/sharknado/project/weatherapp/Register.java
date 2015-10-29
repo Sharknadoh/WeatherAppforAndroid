@@ -9,12 +9,21 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 
+import com.parse.Parse;
+
 public class Register extends Activity implements OnClickListener, OnTouchListener {
 
 	public final String EXTRA_MESSAGE = "blah";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
+		// Enable Local Datastore.
+		Parse.enableLocalDatastore(this);
+
+		Parse.initialize(this, "xSzxcqwQzUSj8AFZC0kTjp2yMasY691lJwexUYqj", "uzpIm0bNx439JgNID1DHQDgBBRvM6qgdOLyDJrGY");
+
+
 		setContentView(R.layout.activity_register);
 	}
 

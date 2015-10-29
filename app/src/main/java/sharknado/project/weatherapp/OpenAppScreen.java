@@ -1,6 +1,7 @@
 package sharknado.project.weatherapp;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,12 +12,18 @@ import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.EditText;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
+
 public class OpenAppScreen extends Activity implements OnClickListener, OnTouchListener {
 
 	public final String EXTRA_MESSAGE = "blah";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+
+
 		setContentView(R.layout.activity_open_app_screen);
 		View loginButton = findViewById(R.id.login_button);
 		loginButton.setOnClickListener(this);
@@ -49,6 +56,7 @@ public class OpenAppScreen extends Activity implements OnClickListener, OnTouchL
 	public void onClick(View v) {
 		switch(v.getId()){
 			case R.id.create_account_button:
+
 				Intent intentr = new Intent(this, Register.class);
 				startActivity(intentr);
 				break;

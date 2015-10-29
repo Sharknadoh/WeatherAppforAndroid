@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="settings_screen">
 
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="example"
-        android:summary="@string/hello_world"
-        android:title="@string/hello_world" />
+    <PreferenceScreen
+            android:key="theme_settings"
+            android:title="Themes">
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="example"
+                android:summary="@string/hello_world"
+                android:title="@string/hello_world" />
+
+<!--             <RadioGroup -->
+<!--                 android:id="@+id/radioGroup1" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentLeft="true" -->
+<!--                 android:layout_below="@+id/textView4" > -->
+<!--                 <RadioButton -->
+<!--                     android:id="@+id/radio0" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:checked="true" -->
+<!--                     android:text="RadioButton" /> -->
+<!--                 <RadioButton -->
+<!--                     android:id="@+id/radio1" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:text="RadioButton" /> -->
+<!--                 <RadioButton -->
+<!--                     android:id="@+id/radio2" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:text="RadioButton" /> -->
+<!--             </RadioGroup> -->
+
+</PreferenceScreen>
     
 </PreferenceScreen><!-- From: file:/D:/My%20Projects/WeatherApps/app/src/main/res/xml/settings.xml -->

@@ -11,6 +11,7 @@
     <string name="login_label">Login</string>
 	<string name="password_label">Password</string>
 	<string name="password_hint">password</string>
+	<string name="confirm_password">Confirm Password</string>
 	<string name="username_hint">username</string>
     <string name="weather_search">Search Weather</string>
     <string name="action_settings">Settings</string>
@@ -18,5 +19,9 @@
     <string name="settings_label">Settings</string>
     <string name="title_activity_prefs">Preferences</string>
     <string name="title_activity_settings_fragment">Settings</string>
-
+    <string name="weather_variable">weathervariable</string>
+    <string name="weather">Weather</string>
+    <string name="email_label">Email</string>
+    <string name="username_label">Weather</string>
+    
 </resources>
