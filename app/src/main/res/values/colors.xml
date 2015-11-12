@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--     <color name=""></color> -->
+    
+    <color name="background">#BBD2FA</color> <!-- Light Blue -->
+    <color name="button">#7bffee</color> <!--Light Green -->
+    <color name="text">#FFFFFF</color> <!--  white  -->
+    
+    
 </resources>

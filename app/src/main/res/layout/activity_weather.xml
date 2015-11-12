@@ -2,7 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+    <!-- weather title -->
+    <TextView
+        android:id="@+id/weather_index_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weather"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="25sp"
+        />
+
+    <!-- show the location you searched for -->
+    <TextView
+        android:id="@+id/weather_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_variable"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="25sp"
+        />
+
+
+
+
 
 </LinearLayout>

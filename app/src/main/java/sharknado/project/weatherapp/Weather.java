@@ -8,6 +8,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+
+import org.androidannotations.annotations.EActivity;
+
+@EActivity(R.layout.activity_weather)
 public class Weather extends Activity implements OnClickListener, OnTouchListener {
 
 	public final String EXTRA_MESSAGE = "blah";

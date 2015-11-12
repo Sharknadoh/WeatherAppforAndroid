@@ -2,14 +2,117 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+
+    <!-- Create Account Title -->
+
     <TextView
-        android:id="@+id/register_warning"
-        android:layout_width="wrap_content"
+        android:id="@+id/log_in_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/register_message">
-        
-    </TextView>
+        android:text="@string/create_account"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        />
+
+
+    <!--  title for email -->
+    <TextView
+        android:id="@+id/Email_title_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        />
+
+    <!-- user input for email -->
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        />
+
+
+    <!-- title for Username -->
+    <TextView
+        android:id="@+id/Username_title_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        />
+    <!-- Users input for username -->
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        />
+    <!-- password title -->
+    <TextView
+        android:id="@+id/password_title_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        />
+    <!-- password input -->
+    <EditText
+        android:id="@+id/input_set_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="@string/password_hint"
+        />
+    <!-- password check title -->
+    <TextView
+        android:id="@+id/confirm_password_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        />
+    <!-- password check input -->
+    <EditText
+        android:id="@+id/input_pw_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="@string/password_hint"
+        />
+
+    <!-- layout to take up space -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+    <!-- button to attempt to create an account -->
+    <Button
+        android:id="@+id/create_account_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textColor="@color/text"
+        android:background="@color/button"
+
+        />
+
+
+
 </LinearLayout>
 <!-- From: file:/D:/My%20Projects/WeatherApps/app/src/main/res/layout/activity_register.xml -->

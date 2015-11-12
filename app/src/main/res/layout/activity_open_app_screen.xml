@@ -2,60 +2,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/background" >
 
+    <!-- layout for search bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal" >
 
+        <!-- Search Bar-->
         <EditText
-            android:id="@+id/search_bar"
+            android:id="@+id/search_text"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:hint="@string/weather_search" />
+            android:hint="@string/search_bar"
+            />
 
+        <!-- Search Button -->
         <Button
             android:id="@+id/search_button"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="@string/search_label" />
+            android:text="@string/search"
+            android:onClick="search"
+            android:background="@color/button"
+            />
+
+
     </LinearLayout>
 
+    <!-- Layout for 3 recent searches -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:orientation="vertical" >
 
+        <!-- recent search 1 -->
         <Button
             android:id="@+id/recent_search1_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recent_search_one" />
+            android:text="@string/recent_search1"
+            android:onClick="recent1"
+            android:background="@color/button"
+            android:textColor="@color/text"
+            />
 
+        <!-- recent search 2 -->
         <Button
             android:id="@+id/recent_search2_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recent_search_two" />
+            android:text="@string/recent_search2"
+            android:onClick="recent2"
+            android:background="@color/button"
+            android:textColor="@color/text"
+            />
 
+        <!-- recent search 3 -->
         <Button
             android:id="@+id/recent_search3_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recent_search_three" />
+            android:text="@string/recent_search3"
+            android:onClick="recent3"
+            android:textColor="@color/text"
+            android:background="@color/button"
+            />
+
+
+
+
+
     </LinearLayout>
 
+    <!-- Log in button -->
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/log_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login_label" />
+        android:text="@string/log_in"
+        android:onClick="logIn"
+        android:textColor="@color/text"
+        android:background="@color/button"
 
+        />
+    <!-- Create Account Button-->
     <Button
         android:id="@+id/create_account_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/create_account_label" />
+        android:text="@string/create_account"
+        android:textColor="@color/text"
+        android:background="@color/button"
+
+        />
 
 </LinearLayout>

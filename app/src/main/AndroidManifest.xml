@@ -17,10 +17,11 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
+        android:name="sharknado.project.weatherapp.WeatherAppGlobal_"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".OpenAppScreen"
+            android:name=".OpenAppScreen_"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,24 +30,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".Login_"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Register"
+            android:name=".Register_"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Weather"
+            android:name=".Weather_"
             android:label="@string/app_name" >
         </activity>
-        <activity
-            android:name=".Prefs"
-            android:label="@string/title_activity_prefs" >
-        </activity>
-        <activity
-            android:name=".SettingsFragment"
-            android:label="@string/title_activity_settings_fragment" >
-        </activity>
+        <!--<activity-->
+            <!--android:name=".Prefs"-->
+            <!--android:label="@string/title_activity_prefs" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".SettingsFragment"-->
+            <!--android:label="@string/title_activity_settings_fragment" >-->
+        <!--</activity>-->
     </application>
 </manifest>

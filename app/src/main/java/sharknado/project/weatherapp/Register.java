@@ -8,20 +8,44 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
+import static android.widget.Toast.LENGTH_SHORT;
+
+@EActivity(R.layout.activity_register)
 public class Register extends Activity implements OnClickListener, OnTouchListener {
 
+	@ViewById (R.id.create_account_check)
+	Button create_account_check;
+	@ViewById (R.id.username_input)
+	EditText userName;
+	@ViewById (R.id.input_set_pw)
+	EditText passWord;
+	@ViewById (R.id.email_input)
+	EditText email;
+
 	public final String EXTRA_MESSAGE = "blah";
+	public boolean parse;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		// Enable Local Datastore.
-		Parse.enableLocalDatastore(this);
 
-		Parse.initialize(this, "xSzxcqwQzUSj8AFZC0kTjp2yMasY691lJwexUYqj", "uzpIm0bNx439JgNID1DHQDgBBRvM6qgdOLyDJrGY");
+
+
+
 
 
 		setContentView(R.layout.activity_register);
@@ -44,6 +68,27 @@ public class Register extends Activity implements OnClickListener, OnTouchListen
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Click(R.id.create_account_check)
+	void createAccount()
+	{
+		ParseUser user = new ParseUser();
+		user.setUsername(userName.getText().toString());
+		user.setPassword(passWord.getText().toString());
+		user.setEmail(email.getText().toString());
+
+		user.signUpInBackground(new SignUpCallback() {
+			public void done(ParseException e) {
+				if (e == null) {
+					Toast toast = Toast.makeText(getBaseContext(), "Successfully Created Account", LENGTH_SHORT);
+					toast.show();				} else {
+					// Sign up didn't succeed. Look at the ParseException
+					// to figure out what went wrong
+				}
+			}
+		});
+
 	}
 
 	@Override

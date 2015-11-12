@@ -1,80 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/background">
 
-	<TextView 
-        android:id="@+id/login_title"
+
+    <!-- Log In Title -->
+
+    <TextView
+        android:id="@+id/log_in_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/login_label"
-		android:gravity="center"
-		android:textSize="25sp"
-	/>
+        android:text="@string/log_in"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="25sp"
+        />
 
-    <LinearLayout 
+    <!-- layout to take up space -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:orientation="vertical"
-	>
+        >
 
 
     </LinearLayout>
+
+    <!-- layout for login input -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent" 
+        android:layout_height="fill_parent"
         android:orientation="vertical"
-	>
+        >
 
-        <TextView 
-			android:id="@+id/login_secondary_title"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="@string/login_label"
-			android:gravity="center"
-			android:textSize="20sp"
-        />
+        <!-- Log in title -->
+        <TextView
+            android:id="@+id/log_in_secodary_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            />
 
-        <EditText 
-			android:id="@+id/username_input"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:hint="@string/username_hint"
-		/>
+        <!-- Log in input -->
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            />
 
-        <TextView 
+        <!-- password title -->
+        <TextView
             android:id="@+id/password_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/password_label"
-			android:gravity="center"
-			android:textSize="20sp"
-		/>
+            android:text="@string/password"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            />
 
+        <!-- password input -->
         <EditText
             android:id="@+id/pw_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:password="true"
             android:hint="@string/password_hint"
-		/>
-
-
-
-	</LinearLayout>
-
-	<LinearLayout
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent"
-	    android:orientation="horizontal" >
-	    
-	    <Button
-            android:id="@+id/login_button_Login"
-            android:layout_width="wrap_content"
+            />
+        <Button
+            android:id="@+id/check_login_button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login_label" />
-	    
-	</LinearLayout>
-    
+            android:text="@string/log_in"
+            android:textColor="@color/text"
+            android:background="@color/button"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
 </LinearLayout>
 <!-- From: file:/D:/My%20Projects/WeatherApps/app/src/main/res/layout/activity_login.xml -->
