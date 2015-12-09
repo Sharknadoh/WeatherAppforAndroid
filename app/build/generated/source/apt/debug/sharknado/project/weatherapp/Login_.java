@@ -74,9 +74,9 @@ public final class Login_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        txtUNField = ((EditText) hasViews.findViewById(id.username_input));
-        txtPWField = ((EditText) hasViews.findViewById(id.pw_input));
         logingButton = ((Button) hasViews.findViewById(id.check_login_button));
+        txtPWField = ((EditText) hasViews.findViewById(id.pw_input));
+        txtUNField = ((EditText) hasViews.findViewById(id.username_input));
         if (logingButton!= null) {
             logingButton.setOnClickListener(new OnClickListener() {
 

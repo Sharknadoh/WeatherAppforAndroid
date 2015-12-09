@@ -10,16 +10,25 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
+import android.widget.ListView;
+import org.androidannotations.api.BackgroundExecutor;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 import sharknado.project.weatherapp.R.id;
 import sharknado.project.weatherapp.R.layout;
+import sharknado.project.weatherapp.adapter.currentWeatherAdapter_;
+import sharknado.project.weatherapp.data.DataRestErrorHandler_;
+import sharknado.project.weatherapp.data.Data_;
+import sharknado.project.weatherapp.eventBus.weatherEventBus_;
 
 public final class OpenAppScreen_
     extends OpenAppScreen
@@ -38,8 +47,14 @@ public final class OpenAppScreen_
     }
 
     private void init_(Bundle savedInstanceState) {
+        PrefsShared = new PrefsShared_(this);
         OnViewChangedNotifier.registerOnViewChangedListener(this);
         App = WeatherAppGlobal_.getInstance();
+        restClientErrorHandler = DataRestErrorHandler_.getInstance_(this);
+        bus = weatherEventBus_.getInstance_(this);
+        adapter = currentWeatherAdapter_.getInstance_(this);
+        restClient = new Data_(this);
+        AfterInject();
     }
 
     @Override
@@ -76,6 +91,7 @@ public final class OpenAppScreen_
     public void onViewChanged(HasViews hasViews) {
         logInButton = ((Button) hasViews.findViewById(id.log_in_button));
         createAccount = ((Button) hasViews.findViewById(id.create_account_button));
+        listCurrent = ((ListView) hasViews.findViewById(id.listCurrent));
         if (createAccount!= null) {
             createAccount.setOnClickListener(new OnClickListener() {
 
@@ -100,6 +116,59 @@ public final class OpenAppScreen_
             }
             );
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(sharknado.project.weatherapp.R.menu.dashboard, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId_ = item.getItemId();
+        if (itemId_ == id.search) {
+            searchClicked();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void getWeather() {
+        BackgroundExecutor.execute(new BackgroundExecutor.Task("", 0, "") {
+
+
+            @Override
+            public void execute() {
+                try {
+                    OpenAppScreen_.super.getWeather();
+                } catch (Throwable e) {
+                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+                }
+            }
+
+        }
+        );
+    }
+
+    @Override
+    public void updateWeather(final String newLocation) {
+        BackgroundExecutor.execute(new BackgroundExecutor.Task("", 0, "") {
+
+
+            @Override
+            public void execute() {
+                try {
+                    OpenAppScreen_.super.updateWeather(newLocation);
+                } catch (Throwable e) {
+                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
+                }
+            }
+
+        }
+        );
     }
 
     public static class IntentBuilder_

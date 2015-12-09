@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
+
 def AAVersion = '3.3.2'
 android {
-    compileSdkVersion 21
+    compileSdkVersion 22
     buildToolsVersion "23.0.2"
 
     defaultConfig {
@@ -17,7 +18,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/notice.txt'
+    }
 }
+repositories {
+    jcenter()
+}
+
 apt {
     arguments {
         androidManifestFile variant.outputs[0].processResources.manifestFile
@@ -40,14 +49,15 @@ apt {
         apt "org.androidannotations:androidannotations:$AAVersion"
         compile "org.androidannotations:androidannotations-api:$AAVersion"
 
-//        compile 'com.squareup:otto:1.3.7'
+        compile 'com.squareup:otto:1.3.7'
 //        compile 'uk.co.chrisjenx:calligraphy:2.1.0'
 //
         compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
         compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
         compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
 
-//        compile 'org.immutables:gson:2.0-rc'
+
+        compile 'org.immutables:gson:2.1.3'
 
 
     }

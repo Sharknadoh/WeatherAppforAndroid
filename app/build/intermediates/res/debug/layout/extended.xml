@@ -1,69 +1,294 @@
-<!-- fragment_screen_slide_page.xml -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/content"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal"
     android:background="@color/background" >
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/mainImg"
+        android:src="@drawable/clear"
+        android:layout_alignTop="@+id/tvDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Llanfairpwllgwyngyll, Wales"
+        android:textAlignment="center"
+        android:id="@+id/tvExtendedLocation"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="December 08, 2015"
+        android:textAlignment="center"
+        android:id="@+id/tvDate"
+        android:layout_below="@+id/tvExtendedLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec congue lacus, at fringilla nulla. Vivamus tempor finibus ex, vel sollicitudin lorem volutpat a. Aenean egestas quam eget porta efficitur. Etiam ac efficitur nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam lacinia finibus facilisis. Cras condimentum risus nisl, posuere lobortis nibh pretium ut."
+        android:id="@+id/tvDailyForecast"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignLeft="@+id/tvDate"
+        android:layout_alignStart="@+id/tvDate"
+        android:layout_alignBottom="@+id/mainImg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
 
-        <LinearLayout
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mainImg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rlTemp">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="High: 24 \u2109"
+            android:id="@+id/tvHiTemp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Low: 2 \u2109"
+            android:id="@+id/tvLowTemp"
+
+            android:layout_below="@+id/tvHiTemp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTemp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2"
+        android:layout_above="@+id/hsvDays">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivHourly"
+            android:src="@drawable/clear"
+            android:layout_above="@+id/tvHourlyConditions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="tvHourlyConditions"
+            android:id="@+id/tvHourlyConditions"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="24 \u2109"
+            android:id="@+id/tvHourlyTemp"
+            android:layout_below="@+id/tvHourlyConditions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="12:00 AM EST on December 09, 2015"
+            android:id="@+id/tvHourlyDate"
+            android:layout_above="@+id/sbHourly"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbHourly"
+            android:max="23"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hsvDays"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             
-            <TextView android:id="@+id/Day1"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:padding="3dp"
-             android:textSize="150sp"
-             android:textColor="@color/text"
-             android:text="Day1">
-             </TextView>
+            <RelativeLayout
+             android:id="@+id/Day1"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:tag="0"
+             android:padding="3dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ivDay1"
+                    android:src="@drawable/clear"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/tvDay1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
              
             
-            <TextView android:id="@+id/Day2"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:padding="3dp"
-             android:textSize="150sp"
-             android:textColor="@color/text"
-             android:text="Day2">
-             </TextView>
+            <RelativeLayout
+             android:id="@+id/Day2"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:tag="1"
+             android:padding="3dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ivDay2"
+                    android:src="@drawable/clear"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/tvDay2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+             </RelativeLayout>
              
-            <TextView android:id="@+id/Day3"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:padding="3dp"
-             android:textSize="150sp"
-             android:textColor="@color/text"
-             android:text="Day3">
-             </TextView>
+            <RelativeLayout
+             android:id="@+id/Day3"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+                android:tag="2"
+                android:padding="3dp"
+             >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ivDay3"
+                    android:src="@drawable/clear"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/tvDay3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+             </RelativeLayout>
              
-            <TextView android:id="@+id/Day4"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:padding="3dp"
-             android:textSize="150sp"
-             android:textColor="@color/text"
-             android:text="Day4">
-             </TextView>
+            <RelativeLayout
+             android:id="@+id/Day4"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+                android:tag="3"
+                android:padding="3dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ivDay4"
+                    android:src="@drawable/clear"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/tvDay4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+             </RelativeLayout>
              
-            <TextView android:id="@+id/Day5"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:padding="3dp"
-             android:textSize="150sp"
-             android:textColor="@color/text"
-             android:text="Day5">
-             </TextView>
-            
-            
+            <RelativeLayout
+             android:id="@+id/Day5"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+                android:tag="4"
+                android:padding="3dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/ivDay5"
+                    android:src="@drawable/clear"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/tvDay5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+             </RelativeLayout>
+
+
         </LinearLayout>
     </HorizontalScrollView>
 
-</ScrollView><!-- From: file:/D:/My%20Projects/WeatherApps/app/src/main/res/layout/extended.xml -->
+
+
+
+</RelativeLayout><!-- From: file:/D:/My%20Projects/WeatherApps/app/src/main/res/layout/extended.xml -->

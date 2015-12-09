@@ -74,10 +74,10 @@ public final class Register_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        create_account_check = ((Button) hasViews.findViewById(id.create_account_check));
-        passWord = ((EditText) hasViews.findViewById(id.input_set_pw));
         email = ((EditText) hasViews.findViewById(id.email_input));
+        passWord = ((EditText) hasViews.findViewById(id.input_set_pw));
         userName = ((EditText) hasViews.findViewById(id.username_input));
+        create_account_check = ((Button) hasViews.findViewById(id.create_account_check));
         if (create_account_check!= null) {
             create_account_check.setOnClickListener(new OnClickListener() {
 

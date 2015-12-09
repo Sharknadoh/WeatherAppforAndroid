@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter a Zip Code"
+        android:id="@+id/tvZip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text"
+
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etZip"
+        android:textColor="@color/text"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_below="@+id/tvZip"
+        android:layout_centerHorizontal="true"
+
+        android:inputType="text"
+        android:hint="Zip Code"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Submit"
+        android:id="@+id/btnZipSubmit"
+        android:layout_below="@+id/etZip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
+        android:background="@color/button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter a City and State"
+        android:id="@+id/tvCity"
+        android:layout_below="@+id/btnZipSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCity"
+        android:hint="City"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="text"
+
+        android:layout_below="@+id/tvCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etState"
+        android:hint="State Initials"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_below="@+id/etCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Submit"
+        android:id="@+id/btnStateSubmit"
+        android:layout_below="@+id/etState"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
+        android:background="@color/button"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout><!-- From: file:/D:/My%20Projects/WeatherApps/app/src/main/res/layout/searchbox.xml -->

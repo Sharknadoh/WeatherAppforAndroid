@@ -21,6 +21,10 @@
         <activity
             android:name="sharknado.project.weatherapp.OpenAppScreen_"
             android:label="@string/app_name" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,6 +41,10 @@
         </activity>
         <activity
             android:name="sharknado.project.weatherapp.Weather_"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sharknado.project.weatherapp.ExtendedForecast_"
             android:label="@string/app_name" >
         </activity>
         <!-- <activity -->
